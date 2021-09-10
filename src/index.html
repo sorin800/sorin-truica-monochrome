@@ -12,9 +12,14 @@
 
 <body>
 
-  <% include html/nav.html %>
-  <h1>Pixellab static website builder</h1>
+  <header class="header container">
+    <% include html/header/header-nav.html %>
+    <% include html/header/header-main.html %>
+  </header>
 
+  <footer class="footer">
+    <% include html/footer/footer-main.html %>
+  </footer>
 
 </body>
 
