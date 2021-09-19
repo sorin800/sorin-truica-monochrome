@@ -1,7 +1,7 @@
-<div class="header-secondary">
-  <section class="header-connect">
+<div class="header-secondary d-lg-flex">
+  <section class="header-connect d-none d-lg-block d-lg-flex">
     <section class="header-socials">
-      <ul>
+      <ul class="d-lg-flex">
         <li>
           <a
             href="http://www.youtube.com"
@@ -44,17 +44,10 @@
       </ul>
     </section>
   </section>
-  <section class="header-controls">
-    <i class="fas fa-plane"></i>
-    <h1>free shipping</h1>
-    <span>monochrome</span>
-    <ul>
-      <li>
-        <i class="fas fa-bars"></i>
-      </li>
-    </ul>
-    <div class="user-controls">
-      <ul>
+  <section class="header-controls d-lg-flex flex-lg-row-reverse">
+    <div class="user-controls d-flex align-items-center justify-content-around">
+      <h1 class="title d-lg-none">monochrome</h1>
+      <ul class="d-flex">
         <li>
           <a href="">
             <i class="far fa-user"></i>
@@ -72,16 +65,23 @@
         </li>
       </ul>
     </div>
-    <form action="">
-      <input
-        type="search"
-        name="search"
-        id="search"
-        placeholder="Search"
-      />
-      <button type="submit">
-        <i class="fas fa-search"></i>
-      </button>
-    </form>
+    <div class="header-search d-flex align-items-center justify-content-around">
+      <ul class="d-lg-none">
+        <li>
+          <i class="fas fa-bars"></i>
+        </li>
+      </ul>
+      <form action="">
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Search"
+        />
+        <button type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
   </section>
 </div>

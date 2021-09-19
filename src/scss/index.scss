@@ -1,18 +1,191 @@
 // @import '~bootstrap/scss/bootstrap';
 
 // fonts
-$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
-@import "./../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
-@import "./../../node_modules/@fortawesome/fontawesome-free/scss/brands";
-@import "./../../node_modules/@fortawesome/fontawesome-free/scss/regular";
-@import "./../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/solid';
 
-@import "./../../node_modules/bootstrap/scss/bootstrap-reboot.scss";
-@import "./../../node_modules/bootstrap/scss/bootstrap-utilities.scss";
-@import "./../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import './../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+@import './../../node_modules/bootstrap/scss/bootstrap-utilities.scss';
+@import './../../node_modules/bootstrap/scss/bootstrap-grid.scss';
 
-@import "./fonts";
+@import './fonts';
+
+//
+CSS RESET
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
 body {
-  font-family: "Roboto", "sans-serif";
+  font-family: 'Playfair Display', 'Roboto', 'sans-serif';
+}
+
+@media (max-width: 991px) {
+  .user-controls {
+    margin-bottom: 10px;
+  }
+
+  .user-controls h1 {
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  .user-controls ul {
+    list-style-type: none;
+  }
+
+  .user-controls li {
+    padding: 10px;
+  }
+
+  .user-controls li a {
+    color: #333;
+  }
+
+  .user-controls li a i {
+    font-size: 19px;
+  }
+
+  .header-search {
+    height: 50px;
+    background-color: #2b2b2b;
+  }
+
+  .header-search ul li i {
+    color: #fff;
+    font-size: 35px;
+  }
+
+  .header-search form {
+    position: relative;
+  }
+
+  .header-search form input {
+    background-color: transparent;
+    border: 0.2px solid #606060;
+    width: 225px;
+    height: 30px;
+  }
+
+  .header-search form button {
+    position: absolute;
+    top: 8px;
+    left: 195px;
+    border: none;
+    font-size: 12px;
+    background-color: transparent;
+    color: #606060;
+  }
+
+  .header-nav {
+    height: 177px;
+    background-image: url('../images/banners/banner-small.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 27px;
+  }
+
+  .header-nav button {
+    position: absolute;
+    top: 125px;
+    left: 70%;
+    padding: 3px 15px;
+    background-color: #fff;
+    font-weight: bold;
+  }
+
+  .header-nav button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 12px;
+  }
+
+  .catalog-preview header h1 {
+    font-size: 19px;
+    text-align: center;
+    border-top: 1px solid #cccccc;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  .product-tile-image-container {
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .product-tile-image a i {
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    font-size: 25px;
+    color: #333;
+  }
+
+  .product-tile-details {
+    text-align: center;
+  }
 }
