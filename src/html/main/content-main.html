@@ -1,8 +1,8 @@
-<section class="catalog-preview">
+<section class="catalog-preview mb-4">
   <header>
     <h1>new stuff</h1>
   </header>
-  <main class="product-tiles d-flex flex-row justify-content-center flex-wrap">
+  <main class="product-tiles d-flex justify-content-around flex-wrap">
     <article class="product-tile">
       <main class="product-tile-image-container">
         <picture class="product-tile-image">
@@ -29,7 +29,7 @@
           monochrome
         </h1>
         <div class="product-price">
-          425 $
+          $425
         </div>
       </footer>
       <!-- ./product-tile-details -->
@@ -61,13 +61,13 @@
           monochrome
         </h1>
         <div class="product-price">
-          425 $
+          $425
         </div>
       </footer>
       <!-- ./product-tile-details -->
     </article>
     <!-- ./product-tile -->
-    <article class="product-tile">
+    <article class="product-tile d-none d-lg-block">
       <main class="product-tile-image-container">
         <picture class="product-tile-image">
           <a
@@ -93,13 +93,13 @@
           monochrome
         </h1>
         <div class="product-price">
-          425 $
+          $425
         </div>
       </footer>
       <!-- ./product-tile-details -->
     </article>
     <!-- ./product-tile -->
-    <article class="product-tile">
+    <article class="product-tile d-none d-lg-block">
       <main class="product-tile-image-container">
         <picture class="product-tile-image">
           <a
@@ -125,7 +125,7 @@
           monochrome
         </h1>
         <div class="product-price">
-          425 $
+          $425
         </div>
       </footer>
       <!-- ./product-tile-details -->
@@ -135,11 +135,11 @@
   <!-- ./product-tiles -->
 </section>
 <!-- ./catalog-preview -->
-<section class="catalog-preview d-flex justify-content-center flex-wrap">
+<section class="catalog-preview mb-4">
   <header>
     <h1>most loved</h1>
   </header>
-  <main class="product-tiles">
+  <main class="product-tiles d-flex justify-content-around flex-wrap">
     <article class="product-tile">
       <main class="product-tile-image-container">
         <picture class="product-tile-image">
@@ -166,7 +166,7 @@
           monochrome
         </h1>
         <div class="product-price">
-          425 $
+          $425
         </div>
       </footer>
       <!-- ./product-tile-details -->
@@ -198,13 +198,13 @@
           monochrome
         </h1>
         <div class="product-price">
-          425 $
+          $425
         </div>
       </footer>
       <!-- ./product-tile-details -->
     </article>
     <!-- ./product-tile -->
-    <article class="product-tile">
+    <article class="product-tile d-none d-lg-block">
       <main class="product-tile-image-container">
         <picture class="product-tile-image">
           <a
@@ -230,13 +230,13 @@
           monochrome
         </h1>
         <div class="product-price">
-          425 $
+          $425
         </div>
       </footer>
       <!-- ./product-tile-details -->
     </article>
     <!-- ./product-tile -->
-    <article class="product-tile">
+    <article class="product-tile d-none d-lg-block">
       <main class="product-tile-image-container">
         <picture class="product-tile-image">
           <a
@@ -262,7 +262,7 @@
           monochrome
         </h1>
         <div class="product-price">
-          425 $
+          $425
         </div>
       </footer>
       <!-- ./product-tile-details -->
@@ -286,29 +286,35 @@
       distinctio eos debitis, aliquam sunt iure natus delectus laudantium nostrum sit magnam doloremque corrupti ea,
       sed quis.
     </p>
-    <p>
+    <p class="d-none d-lg-block">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iste nostrum itaque, unde qui dolore inventore.
       Atque, neque, magnam sint sapiente ad doloremque quae deleniti accusamus ullam, dolore eligendi ut.
       Reprehenderit asperiores ut natus delectus similique, ex optio? Nisi voluptas ducimus dolore dicta magni
       incidunt! Atque at sunt placeat deserunt eum odio corrupti quaerat? Quaerat at eos enim! Quas, veritatis.
     </p>
   </main>
-  <aside class="catalog-details-img">
-    <img
-      src="images/products/product-presentation.png"
-      alt="Products Presentation Image"
-    >
+  <aside class="catalog-details-img mb-4">
+    <picture class="d-block">
+      <source
+        media="(max-width: 991px)"
+        srcset="images/banners/banner-details-small.png"
+      >
+      <img
+        src="images/products/product-presentation.png"
+        alt="Products Presentation Image"
+      >
+    </picture>
   </aside>
 
 
 </section>
 <!-- ./catalog-details -->
 
-<section class="catalog-preview d-flex justify-content-center flex-wrap">
+<section class="catalog-preview">
   <header>
     <h1>men's</h1>
   </header>
-  <main class="product-tiles">
+  <main class="product-tiles d-flex justify-content-around flex-wrap">
     <article class="product-tile">
       <main class="product-tile-image-container">
         <picture class="product-tile-image">
@@ -373,7 +379,7 @@
       <!-- ./product-tile-details -->
     </article>
     <!-- ./product-tile -->
-    <article class="product-tile">
+    <article class="product-tile d-none d-lg-block">
       <main class="product-tile-image-container">
         <picture class="product-tile-image">
           <a
@@ -405,7 +411,7 @@
       <!-- ./product-tile-details -->
     </article>
     <!-- ./product-tile -->
-    <article class="product-tile">
+    <article class="product-tile d-none d-lg-block">
       <main class="product-tile-image-container">
         <picture class="product-tile-image">
           <a
@@ -449,7 +455,7 @@
 </section>
 <!-- ./catalog-preview-all -->
 
-<section class="catalog-preview-all d-flex justify-content-center flex-wrap">
+<section class="catalog-preview-all d-none d-lg-block">
   <header>
     <h1>women's</h1>
   </header>
